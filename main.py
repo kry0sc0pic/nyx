@@ -13,12 +13,13 @@ with open("config/config.json") as jsonconfig:
 async def on_ready():
     await client.change_presence(status=status, activity=act)
     print("Bot is Ready")
-
+client.remove_command("help")
 
 for cog in config["load_cogs"]:
 
     client.load_extension(cog)
 
-client.remove_command("help")
-# token = "<token>" # For local testing
+
+token = "<token>"  # For local testing
 # token = os.environ.get("TOKEN") # For heroku deployment
+client.run(token)
