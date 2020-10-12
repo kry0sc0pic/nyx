@@ -4,9 +4,9 @@ This is the repo for the custom discord bot used on the [Skool Gang]() discord s
 - Truth and Dare
 
 
-## Commands:
+## Commands: Prefix(`$`)
 - Help
-    - `!help` displays all the availale commands
+    - `$help` displays all the availale commands
 - Truth and Dare
-    - `!truth` for truth questions
-    - `!dare` for dare questions
+    - `$truth` for truth questions
+    - `$dare` for dare questions
