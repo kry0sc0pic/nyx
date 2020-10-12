@@ -1,1 +1,5 @@
-{}
+{
+    "load_cogs": [
+        "modules.truthdare"
+    ]
+}
