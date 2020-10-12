@@ -19,6 +19,6 @@ for cog in config["load_cogs"]:
 
     client.load_extension(cog)
 
-
+client.remove_command("help")
 # token = "<token>" # For local testing
 # token = os.environ.get("TOKEN") # For heroku deployment
