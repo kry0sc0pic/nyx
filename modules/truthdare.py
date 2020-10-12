@@ -1,4 +1,13 @@
 from discord.ext import commands
+import json
+import random
+
+with open("files/truth_dare.json") as data:
+    data = json.load(data)
+    verison = data["version"]
+    truths = data["truths"]
+    dares = data["dares"]
+    print(f"Truths and Dares v: {verison}")
 
 
 class TruthDare(commands.Cog):
