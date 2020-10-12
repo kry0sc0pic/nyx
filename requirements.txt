@@ -11,3 +11,4 @@ pycodestyle==2.6.0
 toml==0.10.1
 typing-extensions==3.7.4.3
 yarl==1.6.0
+python_dotenv==0.14.0
