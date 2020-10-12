@@ -13,17 +13,16 @@ with open("files/truth_dare.json") as data:
 class TruthDare(commands.Cog):
     def __init__(self, client):
         self.client = client
-        # TODO Load truths and dares from json file
 
-    @commands.command()
+    @commands.command(aliases=["t"])
     async def truth(self, ctx):
-        # TODO get a random truth question from json file and send it
-        await ctx.send("Truth Question")
+        truth = random.choice(truths)
+        await ctx.send(truth)
 
-    @commands.command()
+    @commands.command(aliases=["d"])
     async def dare(self, ctx):
-        # TODO get a random dare and send it
-        await ctx.send("Dare 4 u")
+        dare = random.choice(dares)
+        await ctx.send(dare)
 
 
 def setup(client):
