@@ -8,7 +8,9 @@ This is the repo for the custom discord bot used on the [Skool Gang]() discord s
 - Move into the directory `cd nyx/`
 - Install dependencies: `pip install -r requirements.txt`
 - Create a new app on the [Discord Developer Portal](https://discord.com/developers/)
-- Edit the `main.py` file and replace `<token>` with the bot token
+- Edit the `.env` file and replace `<token>` with the bot token
+- Uncomment line `5` and `6` from `main.py`
+
 ## Run the bot
 - Run with `python main.py`
 
