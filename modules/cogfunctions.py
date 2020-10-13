@@ -1,5 +1,5 @@
 from discord.ext import commands
-from discord.ext.commands.core import command
+from discord.ext.commands.core import ExtensionNotFound, ExtensionNotLoaded, ExtensionAlreadyLoaded
 
 
 class CogFunctions(commands.Cog):
@@ -8,19 +8,21 @@ class CogFunctions(commands.Cog):
 
     @commands.command()
     async def disable(self, ctx, module):
-        self.client.unload_extension("modules."+module.strip())
-        await ctx.send(f"Disabled module: `{module}`")
+        try:
+            self.client.unload_extension("modules."+module.strip())
+            await ctx.send(f"Disabled module: `{module}`")
+        except ExtensionNotLoaded:
+            await ctx.send(f"Module {module.strip()} is already disabled or doesn't exist")
 
     @commands.command()
     async def enable(self, ctx, module):
-        self.client.load_extension("modules."+module.strip())
-        await ctx.send(f"Enabled module: `{module.strip()}`")
-
-    @commands.command()
-    async def renable(self, ctx, module):
-        self.client.unload_extension("modules."+module.strip())
-        self.client.load_extension("modules."+module.strip())
-        await ctx.send(f"Renabled module: `{module.strip()}`")
+        try:
+            self.client.load_extension("modules."+module.strip())
+            await ctx.send(f"Enabled module: `{module.strip()}`")
+        except ExtensionAlreadyLoaded:
+            await ctx.send(f"Module {module.strip()} is already enabled")
+        except ExtensionNotFound:
+            await ctx.send(f"Module {module.strip()} doesn't exist")
 
 
 def setup(client):
