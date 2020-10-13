@@ -20,7 +20,7 @@ class CogFunctions(commands.Cog):
     async def renable(self, ctx, module):
         self.client.unload_extension("modules."+module.strip())
         self.client.load_extension("modules."+module.strip())
-        await ctx.send(f"Renabled module: `{module.strip}`")
+        await ctx.send(f"Renabled module: `{module.strip()}`")
 
 
 def setup(client):
