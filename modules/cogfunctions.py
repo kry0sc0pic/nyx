@@ -20,9 +20,9 @@ class CogFunctions(commands.Cog):
             self.client.load_extension("modules."+module.strip())
             await ctx.send(f"Enabled module: `{module.strip()}`")
         except ExtensionAlreadyLoaded:
-            await ctx.send(f"Module {module.strip()} is already enabled")
+            await ctx.send(f"Module `{module.strip()}` is already enabled")
         except ExtensionNotFound:
-            await ctx.send(f"Module {module.strip()} doesn't exist")
+            await ctx.send(f"Module `{module.strip()}` doesn't exist")
 
 
 def setup(client):
