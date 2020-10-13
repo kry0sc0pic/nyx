@@ -3,6 +3,7 @@
         "modules.truth",
         "modules.dare",
         "modules.never",
-        "modules.help"
+        "modules.help",
+        "modules.cogfunctions"
     ]
 }
