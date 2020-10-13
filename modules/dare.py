@@ -3,7 +3,7 @@ import json
 import random
 
 
-with open("files/truth_dare.json") as data:
+with open("files/questions.json") as data:
     data = json.load(data)
     dares = data["dares"]
 
