@@ -17,7 +17,7 @@ async def on_ready():
     print("Bot is Ready")
 client.remove_command("help")
 
-for cog in config["load_cogs"]:
+for cog in config["extensions"]:
 
     client.load_extension(cog)
 

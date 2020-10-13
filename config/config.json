@@ -1,5 +1,5 @@
 {
-    "load_cogs": [
+    "extensions": [
         "modules.truth",
         "modules.dare",
         "modules.never",
