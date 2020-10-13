@@ -7,6 +7,7 @@ with open("files/truth_dare.json") as data:
     verison = data["version"]
     truths = data["truths"]
     dares = data["dares"]
+    nevers = data["never"]
     print(f"Truths and Dares v: {verison}")
 
 
@@ -23,6 +24,11 @@ class TruthDare(commands.Cog):
     async def dare(self, ctx):
         dare = random.choice(dares)
         await ctx.send(dare)
+    
+    @commands.command(aliases=["n"])
+    async def never(self, ctx):
+        never = random.choice(nevers)
+        await ctx.send(never)
 
 
 def setup(client):
