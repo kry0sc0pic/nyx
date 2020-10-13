@@ -3,7 +3,7 @@ import json
 import random
 
 
-with open("files/questions.json") as data:
+with open("assets/json/questions.json") as data:
     data = json.load(data)
     truths = data["truths"]
 
