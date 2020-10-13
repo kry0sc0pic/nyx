@@ -2,8 +2,8 @@ import discord
 import json
 import os
 from discord.ext import commands
-# from dotenv import load_dotenv
-# load_dotenv()
+# from dotenv import load_dotenv # for local testing
+# load_dotenv() # for local testing
 client = commands.Bot(command_prefix="$")
 status = discord.Status.online
 act = discord.Activity(type=discord.ActivityType.listening, name="to $help")
@@ -22,5 +22,5 @@ for cog in config["load_cogs"]:
     client.load_extension(cog)
 
 
-token = os.environ.get("TOKEN")  # For heroku deployment
+token = os.environ.get("TOKEN")
 client.run(token)
