@@ -26,3 +26,4 @@ To add extensions
 - Truth and Dare
     - `$truth` or `$t` for truth questions
     - `$dare` or `$d` for dare questions
+    - `$never` or `$n` for never have I ever questions
