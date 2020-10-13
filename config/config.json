@@ -1,6 +1,8 @@
 {
     "load_cogs": [
-        "modules.truthdare",
+        "modules.truth",
+        "modules.dare",
+        "modules.never",
         "modules.help"
     ]
 }
