@@ -4,6 +4,7 @@
         "modules.dare",
         "modules.never",
         "modules.help",
-        "modules.cogfunctions"
+        "modules.cogfunctions",
+        "modules.images"
     ]
 }
