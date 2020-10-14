@@ -20,6 +20,8 @@ class Help(commands.Cog):
             name="$dare or $d", value="Sends a random dare")
         helpEmbed.add_field(
             name="$never or $n", value="Sends a never have I ever question")
+        helpEmbed.add_field(
+            name="$wanted", value="Puts you avatar on a wanted poster", inline=False)
         helpEmbed.add_field(name="Github Repo",
                             value="https://github.com/krishaayjois21/nyx", inline=False)
         helpEmbed.set_thumbnail(url="https://i.imgur.com/fCZVySr.png")

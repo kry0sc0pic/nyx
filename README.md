@@ -3,6 +3,8 @@ This is the source code for the custom discord bot used on one of my private dis
 ## Features:
 - Truth and Dare 
 - Never have I ever questions?
+- Welcome Message (Coming Soon)
+- Image Manipulation
 
 ## Setup
 - Clone the repository: `git clone https://github.com/krishaayjois21/nyx.git`
@@ -28,3 +30,5 @@ To add extensions
     - `$truth` or `$t` for truth questions
     - `$dare` or `$d` for dare questions
     - `$never` or `$n` for never have I ever questions
+- Image Manipulation
+    - `$wanted` get your avatar on a wanted poster
