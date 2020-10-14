@@ -1,5 +1,5 @@
-# Skool Gang Discord Bot
-This is the repo for the custom discord bot used on the [Skool Gang]() discord server
+# Nyx
+This is the source code for the custom discord bot used on one of my private discord servers.
 ## Features:
 - Truth and Dare
 
