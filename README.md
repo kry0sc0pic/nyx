@@ -1,7 +1,8 @@
 # Nyx
 This is the source code for the custom discord bot used on one of my private discord servers.
 ## Features:
-- Truth and Dare
+- Truth and Dare 
+- Never have I ever questions?
 
 ## Setup
 - Clone the repository: `git clone https://github.com/krishaayjois21/nyx.git`
