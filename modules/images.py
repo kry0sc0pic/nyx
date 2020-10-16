@@ -20,6 +20,46 @@ class Img(commands.Cog):
         base.save("temp/wanted.jpg")
         await ctx.send(file=discord.File("temp/wanted.jpg"))
 
+    @commands.command()
+    async def jesus(self, ctx, user: discord.Member = None):
+        if user is None:
+            user = ctx.author
+        base = Image.open("assets/images/jesus_base.jpg")
+        avatar = BytesIO(await user.avatar_url_as(size=128).read())
+        avatar_image = Image.open(avatar)
+        avatar_image = avatar_image.resize((50, 50))
+        base.paste(avatar_image, (64, 56))
+        base.save("temp/jesus.jpg")
+        await ctx.send(file=discord.File("temp/jesus.jpg"))
+
+    
+    @commands.command()
+    async def trash(self, ctx, user: discord.Member = None):
+        if user is None:
+            user = ctx.author
+        base = Image.open("assets/images/trash_base.png")
+        avatar = BytesIO(await user.avatar_url_as(size=128).read())
+        avatar_image = Image.open(avatar)
+        avatar_image = avatar_image.resize((50, 50))
+        base.paste(avatar_image, (23, 39))
+        base.save("temp/trash.png")
+        await ctx.send(file=discord.File("temp/trash.png"))
+
+    @commands.command()
+    async def bad(self, ctx, user: discord.Member = None):
+        if user is None:
+            user = ctx.author
+        base = Image.open("assets/images/bad_base.png")
+        avatar = BytesIO(await user.avatar_url_as(size=128).read())
+        avatar_image = Image.open(avatar)
+        avatar_image = avatar_image.resize((50, 50))
+        base.paste(avatar_image, (64, 56))
+        base.save("temp/bad.png")
+        await ctx.send(file=discord.File("temp/bad.png"))
+
+
+
+
 
 def setup(client):
     client.add_cog(Img(client))
