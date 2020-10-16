@@ -45,18 +45,6 @@ class Img(commands.Cog):
         base.save("temp/trash.png")
         await ctx.send(file=discord.File("temp/trash.png"))
 
-    @commands.command()
-    async def bad(self, ctx, user: discord.Member = None):
-        if user is None:
-            user = ctx.author
-        base = Image.open("assets/images/bad_base.png")
-        avatar = BytesIO(await user.avatar_url_as(size=128).read())
-        avatar_image = Image.open(avatar)
-        avatar_image = avatar_image.resize((50, 50))
-        base.paste(avatar_image, (64, 56))
-        base.save("temp/bad.png")
-        await ctx.send(file=discord.File("temp/bad.png"))
-
 
 
 
