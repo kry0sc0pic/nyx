@@ -1,0 +1,45 @@
+{
+    "thumbnail": "https://i.imgur.com/fCZVySr.png",
+    "data": [
+        {
+            "name": "$help",
+            "value": "Displays the help for the bot",
+            "inline": false
+        },
+        {
+            "name": "$truth or $t",
+            "value": "Sends a random truth question",
+            "inline": true
+        },
+        {
+            "name": "$dare or $d",
+            "value": "Sends a random dare",
+            "inline": true
+        },
+        {
+            "name": "$never or $n",
+            "value": "Sends a random never have I ever question",
+            "inline": true
+        },
+        {
+            "name": "$wanted",
+            "value": "Puts your avatar on a wanted poster",
+            "inline": false
+        },
+        {
+            "name": "$jesus",
+            "value": "Puts your avatar on Jesus's face",
+            "inline": true
+        },
+        {
+            "name": "$trash",
+            "value": "Puts your avatar on a meme showing you as trash",
+            "inline": true
+        },
+        {
+            "name": "Github Repo",
+            "value": "https://github.com/krishaayjois21/nyx",
+            "inline": false
+        }
+    ]
+}
