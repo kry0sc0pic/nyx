@@ -43,7 +43,7 @@ class Img(commands.Cog):
         avatar_image = avatar_image.resize((50, 50))
         base.paste(avatar_image, (23, 39))
         base.save("temp/trash.png")
-        await ctx.send(file=discord.File("temp/wanted.png"))
+        await ctx.send(file=discord.File("temp/trash.png"))
 
     @commands.command()
     async def bad(self, ctx, user: discord.Member = None):
