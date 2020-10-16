@@ -22,14 +22,9 @@
             "inline": true
         },
         {
-            "name": " ",
-            "value": " ",
-            "inline": false
-        },
-        {
             "name": "$wanted",
             "value": "Puts your avatar on a wanted poster",
-            "inline": true
+            "inline": false
         },
         {
             "name": "$jesus",
