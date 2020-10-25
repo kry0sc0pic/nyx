@@ -44,6 +44,18 @@ class Img(commands.Cog):
         base.paste(avatar_image, (23, 39))
         base.save("temp/trash.png")
         await ctx.send(file=discord.File("temp/trash.png"))
+     
+    @commands.command()
+    async def laugh(self, ctx, user: discord.Member = None):
+        if user is None:
+            user = ctx.author
+        base = Image.open("assets/images/laugh_base.jpg")
+        avatar = BytesIO(await user.avatar_url_as(size=128).read())
+        avatar_image = Image.open(avatar)
+        avatar_image = avatar_image.resize((81, 81))
+        base.paste(avatar_image, (41, 22))
+        base.save("temp/laugh.jpg")
+        await ctx.send(file=discord.File("temp/laugh.jpg"))
 
 
 

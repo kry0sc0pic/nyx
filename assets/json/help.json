@@ -37,6 +37,11 @@
             "inline": true
         },
         {
+            "name": "$laugh",
+            "value": "Puts your avatar on a laughing meme",
+            "inline": true
+        },
+        {
             "name": "Github Repo",
             "value": "https://github.com/krishaayjois21/nyx",
             "inline": false
