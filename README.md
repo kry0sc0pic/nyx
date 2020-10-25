@@ -42,5 +42,5 @@ To add extensions
 - Image Manipulation
   - `$wanted` puts your avatar on a wanted poster
   - `$jesus` puts your avatar on Jesus's face
-  - `$bad` puts your avatar on bad boy meme
   - `$trash` puts your avatar on a meme showing you as trash
+  - `$laugh` puts your avatar on a lughing meme
