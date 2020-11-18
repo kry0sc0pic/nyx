@@ -6,7 +6,7 @@ from discord.ext import commands
 # load_dotenv()  # for local testing
 client = commands.Bot(command_prefix="$")
 status = discord.Status.online
-act = discord.Activity(type=discord.ActivityType.listening, name="$help")
+act = discord.Activity(type=discord.ActivityType.listening, name="$help | Nyx")
 with open("config/config.json") as jsonconfig:
     config = json.load(jsonconfig)
 
