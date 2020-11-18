@@ -15,7 +15,7 @@ class Suggestions(commands.Cog):
         self.client = client
 
     @commands.command()
-    async def suggest(ctx , * , suggestion: str):
+    async def suggest(self , ctx , * , suggestion: str):
         embed = discord.Embed(title="Suggestion",
         description=f"Suggested By: {ctx.author.mention}",
         color=0xFFC83D
