@@ -1,3 +1,4 @@
+from discord import channel
 from discord.ext import commands
 import discord
 import json
@@ -18,11 +19,12 @@ class Suggestions(commands.Cog):
     async def suggest(self , ctx , * , suggestion: str):
         embed = discord.Embed(title="Suggestion",
         description=f"Suggested By: {ctx.author.mention}",
-        color=0xFFC83D
+        color=0xee6f57
         )
         embed.add_field(name="Content" , value=suggestion)
         embed.set_thumbnail(url=ctx.author.avatar_url_as(size=128))
-        suggested = await ctx.send(embed=embed)
+        channel = self.client.get_channel(channel_id)
+        suggested = await channel.send(embed=embed)
         await suggested.add_reaction(emoji=up)
         await suggested.add_reaction(emoji=down)
     
