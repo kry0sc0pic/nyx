@@ -1,10 +1,12 @@
 {
+    "suggestions_channel": 778532719356280852,
     "extensions": [
         "modules.truth",
         "modules.dare",
         "modules.never",
         "modules.help",
         "modules.cogfunctions",
-        "modules.images"
+        "modules.images",
+        "modules.suggestions"
     ]
 }
