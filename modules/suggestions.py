@@ -22,7 +22,6 @@ class Suggestions(commands.Cog):
         )
         embed.add_field(name="Content" , value=suggestion)
         embed.set_thumbnail(url=ctx.author.avatar_url_as(size=128))
-        embed.set_footer("Suggestions powered by Nyx")
         suggested = await ctx.send(embed=embed)
         await self.client.add_reaction(suggested , emoji=up)
         await self.client.add_reaction(suggested , emoji=down)
