@@ -45,7 +45,7 @@
             "name": "$suggest <suggestion>",
             "value": "Sends your suggestion in the suggestions channel",
             "inline": false
-        }
+        },
         {
             "name": "Github Repo",
             "value": "https://github.com/krishaayjois21/nyx",
