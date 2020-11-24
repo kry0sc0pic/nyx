@@ -43,4 +43,5 @@ To add extensions
   - `$wanted` puts your avatar on a wanted poster
   - `$jesus` puts your avatar on Jesus's face
   - `$trash` puts your avatar on a meme showing you as trash
-  - `$laugh` puts your avatar on a lughing meme
+  - `$laugh` puts your avatar on a laughing meme
+  - `$award` put your avatar on the obama award meme
