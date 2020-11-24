@@ -58,7 +58,7 @@ class Img(commands.Cog):
         await ctx.send(file=discord.File("temp/laugh.jpg"))
         
         
-    @commands.command()
+    @commands.command(aliases=["reward" , "selfaward" , "medal"])
     async def award(self, ctx, user: discord.Member = None):
         if user is None:
             user = ctx.author
