@@ -22,6 +22,11 @@
             "inline": true
         },
         {
+            "name": "$award",
+            "value": "Puts your avatar on obama award meme",
+            "inline": true
+        },
+        {
             "name": "$wanted",
             "value": "Puts your avatar on a wanted poster",
             "inline": false
