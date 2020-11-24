@@ -68,8 +68,8 @@ class Img(commands.Cog):
         avatar_image = avatar_image.resize((258, 258))
         base.paste(avatar_image, (657, 5))
         base.paste(avatar_image, (296, 128))
-        base.save("temp/award.jpg")
-        await ctx.send(file=discord.File("temp/award.jpg"))
+        base.save("temp/award.png")
+        await ctx.send(file=discord.File("temp/award.png"))
 
 
 
