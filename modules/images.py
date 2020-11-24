@@ -56,6 +56,20 @@ class Img(commands.Cog):
         base.paste(avatar_image, (41, 22))
         base.save("temp/laugh.jpg")
         await ctx.send(file=discord.File("temp/laugh.jpg"))
+        
+        
+    @commands.command()
+    async def award(self, ctx, user: discord.Member = None):
+        if user is None:
+            user = ctx.author
+        base = Image.open("assets/images/award_base.jpg")
+        avatar = BytesIO(await user.avatar_url_as(size=128).read())
+        avatar_image = Image.open(avatar)
+        avatar_image = avatar_image.resize((258, 258))
+        base.paste(avatar_image, (657, 5))
+        base.paste(avatar_image, (296, 128))
+        base.save("temp/award.jpg")
+        await ctx.send(file=discord.File("temp/award.jpg"))
 
 
 
